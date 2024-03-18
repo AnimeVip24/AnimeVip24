@@ -1,0 +1,26 @@
+// Datos de ejemplo de películas/series
+const movies = [
+    { title: "Movie 1", thumbnail: "movie1.jpg", video: "movie1.mp4" },
+    { title: "Movie 2", thumbnail: "movie2.jpg", video: "movie2.mp4" },
+    // Agrega más películas/series aquí
+];
+
+// Función para cargar las películas/series en la página
+function loadMovies() {
+    const mainContent = document.getElementById("main-content");
+    movies.forEach(movie => {
+        const movieElement = document.createElement("div");
+        movieElement.classList.add("movie");
+        movieElement.innerHTML = `
+            <h3>${movie.title}</h3>
+            <video controls>
+                <source src="${movie.video}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        `;
+        mainContent.appendChild(movieElement);
+    });
+}
+
+// Carga las películas/series al cargar la página
+window.onload = loadMovies;
