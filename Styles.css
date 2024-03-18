@@ -1,0 +1,38 @@
+/* Estilos generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #000;
+    padding: 20px;
+}
+
+header img {
+    width: 120px;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Estilos específicos para las películas/series */
+.movie {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.movie img {
+    width: 200px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
